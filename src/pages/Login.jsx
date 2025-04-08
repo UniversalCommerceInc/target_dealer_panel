@@ -49,8 +49,8 @@ const LogIn = () => {
       if (login.fulfilled.match(resultAction)) {
         toast.success("Login Successful");
         localStorage.setItem("auth", true);
-        navigate("/");
-      } else {
+        window.location.href = "/";
+            } else {
         setErrors({ form: 'Login failed. Please try again.' });
       }
     }

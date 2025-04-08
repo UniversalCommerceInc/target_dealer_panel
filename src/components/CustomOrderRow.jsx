@@ -196,7 +196,7 @@ const CustomerOrderRow = ({ customer, lineItems, createdAt, hide, id, orderState
           ))}
         </div>
       </td>
-      <td className="pr-2 py-4 text-center whitespace-nowrap text-card-foreground cursor-pointer" onClick={handleClick}>#{id}</td>
+      <td className="pr-2 py-4 text-center whitespace-nowrap text-card-foreground cursor-pointer" onClick={handleClick}># {id.slice(0, 6)}...{id.slice(-4)}</td>
       <td className="text-center pr-2 py-4 whitespace-nowrap text-card-foreground cursor-pointer" onClick={handleClick}>{formatDate(createdAt)}</td>
       <td className="pr-2 py-4 text-center whitespace-nowrap cursor-pointer" onClick={handleClick}>
         <span

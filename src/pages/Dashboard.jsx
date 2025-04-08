@@ -4,6 +4,9 @@ import DashboardCharts from '../components/DashboardCharts'
 import OrderListComponent from '../components/OrderListComponent'
 
 const Dashboard = () => {
+  // useEffect(() => {
+  //   window.location.reload();    
+  // }, [])
   return (
 
 <main className="w-full dark:bg-black bg-white flex flex-col items-center mt-2">

@@ -55,9 +55,9 @@ return  <ProductItem
        </tbody>
     </table>
     <div className="mt-4">
-    <SubTotalShipping label="Discount" value={totalDiscount} />
+    {/* <SubTotalShipping label="Discount" value={totalDiscount} /> */}
 
-      <SubTotalShipping label="Sub total" value={summary.subTotal} />
+      <SubTotalShipping label="Sub total (with tax)" value={summary.subTotal} />
       <SubTotalShipping label="Shipping" value={summary.shipping} />
       <TotalSection total={summary.total} />
     </div>

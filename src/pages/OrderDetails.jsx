@@ -166,7 +166,7 @@ const OrderDetails = () => {
               }))}
               summary={{
                 totalDiscount: `- ${formatCurrency(discount || 0)}`,
-                subTotal: formatCurrency(subTotal),
+                subTotal: formatCurrency(total-shipping),
                 shipping: formatCurrency(shipping),
                 total: formatCurrency(total),
               }}
