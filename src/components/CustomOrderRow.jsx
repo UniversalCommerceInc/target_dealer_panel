@@ -139,7 +139,7 @@ const CustomerOrderRow = ({ customer, lineItems, createdAt, hide, id, orderState
   const orderstate = useParams();
 
   useEffect(() => {
-    if ( custom.fields.isApproved) {
+    if ( custom?.fields?.isApproved) {
       setButtonText("Approved");
       setConfirmationEnabled(false);
     } else {
@@ -192,7 +192,7 @@ const CustomerOrderRow = ({ customer, lineItems, createdAt, hide, id, orderState
       <td className="text-center pr-2 py-4 whitespace-nowrap cursor-pointer" onClick={handleClick}>
         <div className="text-card-foreground">
           {lineItems?.slice(0, 4).map((line, index) => (
-            <div key={index}> {line?.name?.["en-US"]?.split(" ").slice(0, 2).join(" ")}</div>
+            <div key={index}> {line?.name?.en?.split(" ").slice(0, 2).join(" ")}</div>
           ))}
         </div>
       </td>
